@@ -136,7 +136,7 @@ header .navbar-top #lang {
      background-color: #fff;
  }
  .owl-carousel .card .card-footer .card-img-bottom {
-    width: 23px !important;
+    width: 23px;
     float: right;
 }
 
