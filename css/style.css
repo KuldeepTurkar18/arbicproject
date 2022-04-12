@@ -132,6 +132,13 @@ header .navbar-top #lang {
     color: #2B2E71;
     text-transform: uppercase;
  }
+ .owl-carousel .card .card-footer{
+     background-color: #fff;
+ }
+ .owl-carousel .card .card-footer .card-img-bottom {
+    width: 23px !important;
+    float: right;
+}
 
 /*our-work-section*/
  .our-work-section .card{
