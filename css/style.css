@@ -199,6 +199,7 @@ footer{
 }
 .mobile-ftr-link ul li:not(:last-child){
     padding-bottom: 1rem;
+     
 }
 
 /* banner-section */
