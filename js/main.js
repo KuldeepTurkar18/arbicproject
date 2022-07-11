@@ -61,15 +61,42 @@ $(document).ready(function() {
 	});
 });
 
-$(document).ready(function(){
-  var height = [];
+// $(document).ready(function(){
+//   var height = [];
 
-  $('.our-work-section .card').each(function(){
-    height.push($(this).height());
-  });
+//   $('.our-work-section .card').each(function(){
+//     height.push($(this).height());
+//   });
 
-  var maxheight = Math.max.apply(null,height);
+//   var maxheight = Math.max.apply(null,height);
 
-  $('.our-work-section .card').height(maxheight);
+//   $('.our-work-section .card').height(maxheight);
 
+// });
+
+var text = $('.text-overflow'),
+     btn = $('.btn-overflow'),
+       h = text[0].scrollHeight; 
+
+if(h > 120) {
+	btn.addClass('less');
+	btn.css('display', 'block');
+}
+
+btn.click(function(e) 
+{
+  e.stopPropagation();
+
+  if (btn.hasClass('less')) {
+      btn.removeClass('less');
+      btn.addClass('more');
+      btn.text('Show less');
+
+      text.animate({'height': h});
+  } else {
+      btn.addClass('less');
+      btn.removeClass('more');
+      btn.text('Show more');
+      text.animate({'height': '120px'});
+  }  
 });

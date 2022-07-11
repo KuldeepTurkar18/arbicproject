@@ -153,6 +153,17 @@ header .navbar-top #lang {
     position: relative;
 }
 
+.services .card p {
+    height: 200px;
+    display:block; 
+    overflow:hidden;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+.services .card button.btn-overflow{
+    margin-bottom: 10px;
+}
+
 .app-services::after,
 .sms-services::after,
 .workinghour-services:after {
