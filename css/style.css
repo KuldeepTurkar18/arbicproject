@@ -124,6 +124,9 @@ header .navbar-top #lang {
    font-weight: 700;
    text-transform: uppercase;
 }
+.card .card-header h2 .btn:focus{
+    box-shadow: none;
+}
 
 /*press-news-section*/
 .press-news-section {
@@ -141,22 +144,13 @@ header .navbar-top #lang {
     width: 23px;
     float: right;
 }
-.app-services .card,
-.workinghour-services .card,
-.sms-services .card {
+.services .card {
     padding: 15px;
-}
-
-.app-services,
-.sms-services,
-.workinghour-services{
-    position: relative;
-}
-
-.app-services .card,
-.sms-services .card,
-.workinghour-services {
     border-radius: 0 0 20px 20px;
+}
+
+.services{
+    position: relative;
 }
 
 .app-services::after,
@@ -185,6 +179,10 @@ header .navbar-top #lang {
    padding: 1.5rem 2rem;
    margin-bottom: 2rem;
    color: #2B2E71;
+ }
+ .our-work-section .services .card img{
+    height: 140px;
+    margin-bottom: 1rem;
  }
 
 /* footer css */
@@ -219,9 +217,10 @@ footer{
     border: 1px solid #5054A0;
 }
 .ftr-media .ftr-media-inner #lang{
-    background-color: transparent;
+    background-color: #2b2e71;
     border: none;
     color: #fff;
+    padding: 0 10px;
 }
 .ftr-media .ftr-media-inner .call{
     color: #fff;
