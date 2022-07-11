@@ -146,7 +146,6 @@ header .navbar-top #lang {
 }
 .services .card {
     padding: 15px;
-    border-radius: 0 0 20px 20px;
 }
 
 .services{
@@ -162,9 +161,14 @@ header .navbar-top #lang {
 }
 .services .card button.btn-overflow{
     margin-bottom: 10px;
+    border: none;
+    background: none;
+    color: #2b2e71;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
-.app-services::after,
+/* .app-services::after,
 .sms-services::after,
 .workinghour-services:after {
     position: absolute;
@@ -176,7 +180,7 @@ header .navbar-top #lang {
     left: 0;
     z-index: 1;
     border-radius: 0 0 20px 20px;
-  }
+  } */
 
 /*our-work-section*/
 /* .our-work-section .card{
@@ -190,6 +194,7 @@ header .navbar-top #lang {
    padding: 1.5rem 2rem;
    margin-bottom: 2rem;
    color: #2B2E71;
+   border-inline: 2px dotted;
  }
  .our-work-section .services .card img{
     height: 140px;
