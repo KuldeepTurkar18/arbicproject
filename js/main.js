@@ -158,3 +158,9 @@ $('.slides').on('beforeChange', function(event, { slideCount: count }, currentSl
   
   
   });
+
+
+  $(".navbar-nav li").on('click', function(){
+    $(".navbar-nav li").removeClass('active');
+    $(this).addClass('active');
+  });

@@ -88,7 +88,62 @@ header .navbar-top #lang {
 .navbar-nav .nav-item .nav-link {
     color: #2B2E71;
     font-size: 1.125rem;
+    position: relative;
     letter-spacing: -0.36px;
+}
+.navbar-nav  li a::after{
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #168BDF;
+    left: 0;
+    bottom: 0;
+    transform: translateX(50%);
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.45s ease-in-out;
+} 
+
+.navbar-nav  li a:hover:after{
+    width: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-nav .nav-item.active a:after{
+    width: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+.sub-nav{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 1rem 4rem;
+  margin-left: -4rem;
+  width: 100vw;
+  height: 0;
+  z-index: 101;
+  gap: 40px;
+  column-count: 4;
+  visibility: hidden;
+  box-sizing:border-box;
+  /* padding: 1rem 0.5rem; */
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  background: transparent linear-gradient(180deg, #2B2E71 0%, #161739 100%) 0% 0% no-repeat;
+}
+.sub-nav li a{
+    color: #fff;
+}
+.navbar-nav .nav-item:hover .sub-nav{
+    visibility: visible;
+    opacity: 1;
+    height: 200px;
+    transition: all 250ms ease;
+}
+.navbar-nav .nav-item.active a {
+    font-weight: 600;
 }
 
 .navbar-nav .nav-item:not(:last-child) {
