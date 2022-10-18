@@ -102,7 +102,7 @@
                         <div class="banner-content">
                             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing .</p>
-                            <a class="btn btn-banner">submit</a>
+                            <a class="btn btn-banner" data-toggle="modal" data-target="#sumbitmodole">submit</a>
                         </div>
                     </div>
                     <div class="col-lg-7 col-sm-12">
@@ -264,6 +264,9 @@
 
     <section class="press-news-section">
         <div class="container">
+          <div class="section-head">
+            <h2>News</h2>
+            </div>
               <div class="owl-carousel owl-theme">
                     <div class="item">
                       <div class="card">
@@ -546,6 +549,60 @@
         </div>
     </footer>
 
+    <!-- modole  -->
+    <div class="modal fade" id="sumbitmodole" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-uppercase" id="exampleModalLongTitle">Fill The Information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Enter Name</label>
+                <input type="text" class="form-control" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Enter Mobile Number</label>
+                <input type="tel" class="form-control" placeholder="Mobile number">
+              </div>
+              <div class="form-row align-items-center mb-3">
+                <legend class="col-form-label col-4 pt-0">Gender :</legend>
+                  <div class="form-check col-3">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                    <label class="form-check-label" for="gridRadios1">
+                     Male
+                    </label>
+                  </div>
+                  <div class="form-check col-3">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Female
+                    </label>
+                  </div>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- modole  -->
+
    <img id="loaderIcon" style="visibility:hidden; display:none;position: fixed;top:50%;left: 50%;transform: translate(-50%, -50%);z-index: 99"
     src="https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif" alt="..."/>
 </body>
@@ -568,5 +625,5 @@
             $(".cross").hide()
           });
       });
-    </script>
+  </script>
 </html>

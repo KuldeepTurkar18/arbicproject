@@ -115,13 +115,18 @@ header .navbar-top #lang {
     opacity: 1;
     visibility: visible;
 }
+.navbar-bottom{
+    position: relative;
+}
+.navbar{
+    position: static;
+}
 .sub-nav{
   position: absolute;
   left: 0;
   top: 100%;
   padding: 1rem 4rem;
-  margin-left: -4rem;
-  width: 100vw;
+  width: 100%;
   height: 0;
   z-index: 101;
   gap: 40px;
@@ -203,6 +208,9 @@ header .navbar-top #lang {
 /*press-news-section*/
 .press-news-section {
     background-color: #F1F5F8;
+}
+.press-news-section .section-head{
+    background-color: #fff;
 }
 
 .press-news-section .card .btn {
@@ -383,9 +391,13 @@ footer {
     min-width: 333px;
     color: #fff;
     padding: 0.75rem 1.68px;
+    text-transform: capitalize;
     text-align: center;
     font-size: 1.125rem;
     line-height: 1.635rem;
+}
+.btn-banner:hover{
+    color: #fff;
 }
 
 .banner-section .carousel-indicators {
@@ -530,7 +542,57 @@ footer {
     opacity: 1;
     outline: none;
   }
-  
+  #sumbitmodole .modal-content{
+    background-image: url(../img/login-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #sumbitmodole .modal-header{
+    justify-content: center;
+ }
+ #sumbitmodole .modal-header h5{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+ }
+  .modal-header .close {
+    padding: 1rem 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    margin: 0;
+    color: #fff;
+  }
+  .form-group label,
+  .form-check label,
+  .col-form-label{
+    color: #fff;
+  }
+  .form-group .form-text{
+    color: #e2e2e2;
+  }
+
+.modal-header .close span{
+   font-size: 32px;
+}
+.modal-footer .btn{
+    color: #fff;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 8px 21px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px rgb(225 225 225 / 85%);
+    transition: all 0.2s ease-in-out;
+}
+.modal-footer .btn:hover{
+    background-color: #168BDF;
+    border: 1px solid #168BDF;
+}
 
 @media(max-width:1800px) {
     header .navbar-top {
